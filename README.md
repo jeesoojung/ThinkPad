@@ -9,7 +9,7 @@ ThinkPad is a mobile-first web app for capturing current thoughts.
 - `app.js`: thought recording, local storage, record deletion, and TXT share/download flow
 - `manifest.json`: home-screen web app metadata
 - `sw.js`: offline cache for hosted use
-- `icon.svg`, `icon-512.png`: app icons
+- `icon-512.png`: app icon
 
 ## iPhone Use
 

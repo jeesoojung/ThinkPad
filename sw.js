@@ -1,5 +1,5 @@
-const CACHE_NAME = "thinkpad-cache-v9";
-const ASSETS = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon.svg", "./icon-512.png"];
+const CACHE_NAME = "thinkpad-cache-v10";
+const ASSETS = ["./", "./index.html", "./styles.css", "./app.js", "./manifest.json", "./icon-512.png"];
 
 self.addEventListener("install", (event) => {
   event.waitUntil(caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS)));
