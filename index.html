@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="ThinkPad" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <title>ThinkPad</title>
+    <link rel="manifest" href="./manifest.json" />
+    <link rel="apple-touch-icon" href="./icon-512.png" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <section class="hero" aria-labelledby="app-title">
+        <h1 id="app-title">ThinkPad</h1>
+      </section>
+
+      <div class="pad-heading">
+        <time id="today-label"></time>
+        <span>Now I Think...</span>
+      </div>
+
+      <section class="thought-panel" aria-label="생각 입력">
+        <form class="thought-form" id="thought-form">
+          <textarea id="thought-body-input" rows="9" aria-label="생각 내용" placeholder="Now I think..." required></textarea>
+          <button class="complete-button" type="submit" aria-label="입력 완료">V</button>
+        </form>
+      </section>
+
+      <section class="records-panel" aria-label="이전 기록">
+        <p class="empty-hint" id="empty-hint">이전 기록이 없습니다.</p>
+        <ol class="record-list" id="record-list" aria-live="polite"></ol>
+      </section>
+
+      <button class="export-button" id="export-records" type="button">.txt Extract</button>
+    </main>
+
+    <template id="record-template">
+      <li class="record-item">
+        <time class="record-date"></time>
+        <div class="record-content">
+          <p></p>
+        </div>
+        <div class="record-actions">
+          <button class="copy-record" type="button">COPY</button>
+          <button class="delete-record" type="button">DELETE</button>
+        </div>
+      </li>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
