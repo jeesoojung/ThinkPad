@@ -1,18 +1,16 @@
 {
-  "name": "ThinkPad",
-  "short_name": "ThinkPad",
-  "description": "Capture current thoughts and export them as a text file.",
-  "start_url": "./index.html",
-  "scope": "./",
+  "name": "Rentry Opener",
+  "short_name": "Rentry",
+  "start_url": "./",
   "display": "standalone",
-  "background_color": "#fffdf8",
-  "theme_color": "#fffdf8",
+  "background_color": "#ffffff",
+  "theme_color": "#2f6bff",
   "icons": [
     {
       "src": "./icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any"
+      "purpose": "any maskable"
     }
   ]
 }
